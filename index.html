@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja strona</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #dbeafe, #ede9fe);
+            color: #1f2937;
+            font-family: Arial, sans-serif;
+        }
+
+        header,
+        main,
+        footer {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 16px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Witaj na mojej stronie</h1>
+        <nav aria-label="Menu główne">
+            <ul>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#o-mnie">O mnie</a></li>
+                <li><a href="#lista">Lista</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="start">
+            <h2>Start</h2>
+            <p>To jest przykładowa strona zbudowana ze znaczników semantycznych HTML.</p>
+        </section>
+
+        <section id="o-mnie">
+            <h2>O mnie</h2>
+            <p>Nazywam się Bożydar i interesuję się tworzeniem stron internetowych.</p>
+        </section>
+
+        <section id="lista">
+            <h2>Lista umiejętności</h2>
+
+            <h3>Lista punktowana</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Lista numerowana</h3>
+            <ol>
+                <li>Zaplanuj stronę.</li>
+                <li>Dodaj znaczniki HTML.</li>
+                <li>Dodaj style i zawartość.</li>
+            </ol>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <img src="509-800x450.jpg"
+                 alt="Wodospad spadający z zielonej skały"
+                 width="800"
+                 height="450">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Moja strona</p>
+    </footer>
+</body>
+</html>
